@@ -18,12 +18,7 @@ window.onload = function() {
     
     site.append("<p class='site-nav'></p>");
     site.append("<div class='app-content'></div>");
-    
-    
-    for (i = 1; i <= 10; i++) {
-      $("<div class='indicator-inner'></div>").appendTo(".indicator");
-    }
-    
+        
     function addNode(type, classname, content) {
       var nodeType = type,
           nodeClass = classname,
@@ -62,7 +57,7 @@ window.onload = function() {
         }
       }
     });
-    
+   
     
     
     

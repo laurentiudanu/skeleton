@@ -58,17 +58,3 @@ body {
   #app .site-nav {font-size: 0; padding: 16px 0 0 0;}
   #app span {color: #60e64a; display: inline-block; font-size: 16px; margin: 0 24px 0 0; cursor: pointer;}
     #app span:last-child {margin: 0;}
-  .indicator {
-    width: 140px;
-    height: auto;
-    overflow: hidden;
-  }
-    .indicator .indicator-inner {
-      width: calc(10% - 1px);
-      width: -moz-calc(10% - 1px);
-      width: -webkit-calc(10% - 1px);
-      height: 32px;
-      float: left;
-      background-color: #bebebe;
-      margin-right: 1px;
-    }
