@@ -45,6 +45,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.strike {background-color: #20844c;}
+img {
+  position: absolute; 
+  top: 0; 
+  right: 380px;
+  opacity: 90%;
+  display: none;
+}
+img.visible {display: block;}
+
 /* some standard specific wp styles */
 .alignleft {float: left; margin: 0 15px 0 0;}
 .alignright {float: right; margin: 0 0 0 15px; }

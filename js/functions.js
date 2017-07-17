@@ -1,5 +1,17 @@
 window.onload = function() {
   (function($){
+    
+    var lightningB = function() {
+      $("body").removeClass("strike");
+      $("img").animate({opacity: 0}, 800);
+    }
+    var lightningA = function() {
+      $("body").addClass("strike");
+      setTimeout(lightningB, 300);
+      $("img").addClass("visible");
+    }
+    setTimeout(lightningA, 2000);
+    
     var site = $("#app"),
         db = {
                 "posts": [
