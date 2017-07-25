@@ -68,3 +68,24 @@ img.visible {display: block;}
   #app .site-nav {font-size: 0; padding: 16px 0 0 0;}
   #app span {color: #60e64a; display: inline-block; font-size: 16px; margin: 0 24px 0 0; cursor: pointer;}
     #app span:last-child {margin: 0;}
+
+  
+.space {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+  .space .star, .space .planet {
+    background-color: #fff;
+    position: absolute;
+    display: block;
+  }
+  .space .star {
+    width: 1px;
+    height: 1px;
+  }
+  .space .planet {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+  }

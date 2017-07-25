@@ -12,6 +12,24 @@ window.onload = function() {
     }
     setTimeout(lightningA, 2000);
     
+    
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    var howMany = getRandomInt(4,80);
+    var howManyS = getRandomInt(50,300);
+    
+    for (var i = 0; i <= howMany; i++) {
+      $(".space").append("<span class='planet' style='left: "+getRandomInt(2,800)+"px; top:"+getRandomInt(2,800)+"px'></span>");
+    }
+    for (var i = 0; i <= howManyS; i++) {
+      $(".space").append("<span class='star' style='left: "+getRandomInt(8,780)+"px; top:"+getRandomInt(8,780)+"px'></span>");
+    }
+    
+    $('.randomElement').each(function(){
+      $(this).css({'top' : getRandomInt(-100,600), 'left' : getRandomInt(-100,600)});
+    });
+    
     var site = $("#app"),
         db = {
                 "posts": [
