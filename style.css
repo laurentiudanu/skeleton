@@ -43,8 +43,15 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "onum" 1;	
 }
-
+@supports (font-variant-numeric: oldstyle-nums) {
+    body {
+        font-feature-settings: normal;
+        font-variant-numeric: oldstyle-nums;
+    }
+}
 .strike {background-color: #20844c;}
 img {
   position: absolute; 
